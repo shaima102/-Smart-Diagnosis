@@ -357,3 +357,28 @@ body {
   }
 }
 
+/* ✅ إصلاح اختفاء الكروت في الجوال */
+@media (max-width: 768px) {
+  #page2 .cards,
+  #page4 .cards {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  #page2 .flip-card,
+  #page4 .flip-card {
+    display: flex !important;
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto !important;
+  }
+
+  #page2 .flip-inner,
+  #page4 .flip-inner {
+    transform: none !important;
+  }
+}
+
