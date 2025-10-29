@@ -349,64 +349,55 @@ body {
 
 /* ✅ إصلاح اختفاء الكروت في الجوال */
 @media (max-width: 768px) {
+  #page2,
+  #page4 {
+    overflow: visible !important;
+  }
+
   #page2 .cards,
   #page4 .cards {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    align-items: center !important;
-    gap: 20px !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
   }
 
   #page2 .flip-card,
   #page4 .flip-card {
-    display: flex !important;
-    width: 90% !important;
-    height: auto !important;
+    width: 45% !important;
+    height: 420px !important;
     margin: 10px auto !important;
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    perspective: none !important;
   }
 
   #page2 .flip-inner,
   #page4 .flip-inner {
     transform: none !important;
   }
-}
-/* ✅ إصلاح نهائي لاختفاء الكروت في الجوال */
-@media (max-width: 768px) {
-  #page2 .cards,
-  #page4 .cards {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: stretch !important;
-    gap: 20px !important;
-    width: 100% !important;
-    min-height: auto !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
 
-  #page2 .flip-card,
-  #page4 .flip-card {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 90% !important;
-    height: auto !important;
-    margin: 15px auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  #page2 .flip-front,
+  #page4 .flip-front,
+  #page2 .flip-back,
+  #page4 .flip-back {
+    position: relative !important;
+    backface-visibility: visible !important;
   }
 
   #page2 .flip-front img.card-img,
   #page4 .flip-front img.card-img {
-    display: block !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    display: block !important;
   }
 }
+
+
 
