@@ -193,30 +193,7 @@ tr:hover td {
   transition: 0.3s ease;
 }
 
-/* ألوان الخلفية لكل صفحة */
-#page1 { background: url("https://raw.githubusercontent.com/shaima102/Smart-Diagnosis/main/tech-bg.jpg") no-repeat center center/cover; }
-#page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
-#page3 { background: url("https://raw.githubusercontent.com/shaima102/Smart-Diagnosis/main/Solutions.jpg") no-repeat center center/cover; }
-#page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
-
-/* تجاوب للشاشات الصغيرة */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .flip-card {
-    width: 90%;
-    height: 420px;
-  }
-
-  table {
-    width: 95%;
-  }
-}
-
-/* ✅ شعار التشخيص الذكي في الصفحة الأولى بدون ظل أو إطار */
+/* ✅ شعار التشخيص الذكي */
 #page1 .logo {
   width: 600px;
   max-width: 90%;
@@ -280,4 +257,35 @@ tr:hover td {
 #page2 h2,
 #page4 h2 {
   color: #333333;
+}
+
+/* ✅ خلفيات الصفحات من نفس مجلد المشروع */
+#page1 { background: url("./tech-bg.jpg") no-repeat center center/cover; }
+#page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
+#page3 { background: url("./Solutions.jpg") no-repeat center center/cover; }
+#page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
+
+/* 📱 تجاوب ممتاز للجوال */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card {
+    width: 90%;
+    height: 420px;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  .page h2 {
+    font-size: 1.5rem;
+  }
+
+  #page1 .logo {
+    width: 85%;
+  }
 }
