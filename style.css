@@ -155,30 +155,28 @@ body {
   font-size: 1.1rem;
 }
 
-/* 🎨 جدول صفحة 3 بتصميم زجاجي احترافي */
+/* جدول صفحة 3 (زجاجي احترافي وشفاف) */
 #page3 {
-  background: url("./Solutions.jpg") no-repeat center center/cover;
+  background: url('/img/Solutions.jpg') no-repeat center center/cover;
 }
 
 #page3 table {
   width: 85%;
   border-collapse: collapse;
-  margin-top: 40px;
+  margin-top: 30px;
   border-radius: 16px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.08); /* زجاجي شفاف */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   color: #fff;
   font-size: 1.05rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 #page3 th {
-  background: rgba(0, 123, 131, 0.9);
+  background: rgba(0, 123, 131, 0.85);
   color: #fff;
   padding: 14px;
   font-weight: 700;
@@ -187,14 +185,13 @@ body {
 
 #page3 td {
   padding: 14px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   line-height: 1.8;
-  color: #e6faff;
 }
 
 #page3 tr:hover td {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.25);
   transition: 0.3s ease;
 }
 
@@ -376,3 +373,4 @@ body {
   visibility: visible !important;
   background: none !important;
 }
+
