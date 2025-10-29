@@ -281,43 +281,48 @@ tr:hover td {
 #page4 h2 {
   color: #333333;
 }
-/* ✅ إصلاح وضوح النصوص في الصفحات الفاتحة */
-#page2 h2, 
-#page2 p, 
-#page2 li,
-#page4 h2, 
-#page4 p, 
-#page4 li {
-  color: #333 !important; /* يجعل النص داكن وواضح فوق الخلفية الفاتحة */
-}
-
-/* ✅ تحسين ظهور الأسهم */
-.arrow {
-  color: #007b83 !important;
-}
-
-/* ✅ تحسين التجاوب في الشاشات الصغيرة جدًا */
-@media (max-width: 480px) {
-  .flip-card {
-    width: 95%;
-    height: auto;
-  }
-
-  h2 {
-    font-size: 1.4rem;
+/* ✅ إصلاح الصور والخلفيات في الجوال دون تغيير التنسيق */
+@media (max-width: 768px) {
+  .page {
+    padding: 20px;
+    background-size: cover !important;
+    background-position: center !important;
   }
 
   .logo {
-    width: 80%;
+    width: 85%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .flip-card {
+    width: 90%;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .flip-front img.card-img {
+    object-fit: cover;
+    height: 100%;
   }
 
   table {
     width: 95%;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   td, th {
     padding: 10px;
   }
 }
+
+/* ✅ ضمان بقاء الصور الخلفية ظاهرة على جميع الأجهزة */
+#page1, #page3 {
+
 
