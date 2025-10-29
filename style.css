@@ -196,7 +196,7 @@ tr:hover td {
 /* ألوان الخلفية لكل صفحة */
 #page1 { background: linear-gradient(135deg, #f0f4f7, #dbe9f1); }
 #page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
-#page3 { background: url('/img/Solutions.jpg') no-repeat center center/cover; }
+#page3 { background: url('Solutions.jpg') no-repeat center center/cover; }
 #page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
 
 /* تجاوب للشاشات الصغيرة */
@@ -218,12 +218,12 @@ tr:hover td {
 
 /* خلفية الصفحة الأولى */
 #page1 {
-  background: url('/img/tech-bg.jpg') no-repeat center center/cover;
+  background: url('tech-bg.jpg') no-repeat center center/cover;
 }
 
 /* جدول صفحة 3 (زجاجي احترافي وشفاف) */
 #page3 {
-  background: url('/img/Solutions.jpg') no-repeat center center/cover;
+  background: url('Solutions.jpg') no-repeat center center/cover;
 }
 
 #page3 table {
@@ -332,3 +332,4 @@ tr:hover td {
   justify-content: center;
   text-align: center;
 }
+
