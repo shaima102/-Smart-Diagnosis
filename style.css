@@ -263,7 +263,7 @@ tr:hover td {
 
 /* جدول صفحة 3 (زجاجي احترافي وشفاف) */
 #page3 {
-  background: url('/img/Solutions.jpg') no-repeat center center/cover;
+  background: url('Solutions.jpg') no-repeat center center/cover;
 }
 
 #page3 table {
@@ -353,3 +353,4 @@ tr:hover td {
   visibility: visible !important;
   background: none !important;
 }
+
