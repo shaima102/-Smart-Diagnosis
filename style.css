@@ -228,50 +228,78 @@ body {
 
 /* 🎨 صفحة 3 — تصميم زجاجي بنفس ألوان الصورة */
 #page3 {
-  background: url("./Solutions.jpg") no-repeat center center/cover;
+  background: radial-gradient(circle at top left, #032b3f 0%, #0a425a 40%, #001f2f 100%), 
+              url("./Solutions.jpg") no-repeat center center/cover;
   color: #e7faff;
+  position: relative;
 }
 
+/* طبقة شفافة فوق الخلفية */
+#page3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 30, 50, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+#page3 * {
+  position: relative;
+  z-index: 1;
+}
+
+#page3 h2 {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* جدول زجاجي */
 #page3 table {
   width: 85%;
   border-collapse: collapse;
   margin-top: 40px;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-
-  background: rgba(0, 90, 100, 0.35);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.15);
-
   color: #e7faff;
   font-size: 1.05rem;
   text-align: center;
   transition: all 0.3s ease;
 }
 
+/* رؤوس الجدول */
 #page3 th {
-  background: rgba(0, 123, 131, 0.9);
+  background: linear-gradient(90deg, rgba(0, 123, 131, 0.95), rgba(0, 153, 163, 0.9));
   color: #ffffff;
-  padding: 14px;
+  padding: 16px;
   font-weight: 700;
   font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* خلايا الجدول */
 #page3 td {
   padding: 14px;
   background: rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   line-height: 1.8;
   color: #e7faff;
 }
 
+/* تأثير hover */
 #page3 tr:hover td {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
   transition: 0.3s ease;
 }
 
+/* العمود الأول */
 #page3 table td:first-child {
   font-weight: 600;
   color: #b8f6ff;
