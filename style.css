@@ -218,12 +218,12 @@ tr:hover td {
 
 /* خلفية الصفحة الأولى */
 #page1 {
-  background: url('tech-bg.jpg') no-repeat center center/cover;
+  background: url('img/tech-bg.jpg') no-repeat center center/cover;
 }
 
 /* جدول صفحة 3 (زجاجي احترافي وشفاف) */
 #page3 {
-  background: url('Solutions.jpg') no-repeat center center/cover;
+  background: url('img/Solutions.jpg') no-repeat center center/cover;
 }
 
 #page3 table {
@@ -332,4 +332,5 @@ tr:hover td {
   justify-content: center;
   text-align: center;
 }
+
 
