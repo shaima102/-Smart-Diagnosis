@@ -259,33 +259,101 @@ tr:hover td {
   color: #333333;
 }
 
-/* ✅ خلفيات الصفحات من نفس مجلد المشروع */
+/* ✅ خلفيات الصفحات */
 #page1 { background: url("./tech-bg.jpg") no-repeat center center/cover; }
 #page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
 #page3 { background: url("./Solutions.jpg") no-repeat center center/cover; }
 #page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
 
-/* 📱 تجاوب ممتاز للجوال */
+/* ============================= */
+/* 🔹 تحسين الرسبونسف للجوالات 🔹 */
+/* ============================= */
+
 @media (max-width: 768px) {
+  .page {
+    padding: 20px;
+    height: auto;
+  }
+
+  .logo, #page1 .logo {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .arrow {
+    font-size: 1.8rem;
+    bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
   .cards {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .flip-card {
     width: 90%;
-    height: 420px;
+    height: auto;
+  }
+
+  .flip-inner {
+    height: auto;
+  }
+
+  .flip-front, .flip-back {
+    height: auto;
+    padding: 15px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 
   table {
-    width: 95%;
+    width: 100%;
+    font-size: 0.9rem;
   }
 
-  .page h2 {
+  th, td {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+  }
+
+  th {
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  .arrow {
     font-size: 1.5rem;
-  }
-
-  #page1 .logo {
-    width: 85%;
   }
 }
