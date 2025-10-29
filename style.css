@@ -365,3 +365,55 @@ body {
   background: none !important;
 }
 
+/* 📱 تحسين الرسبونسف لصفحات 2 و4 */
+@media (max-width: 768px) {
+  #page2 .flip-card,
+  #page4 .flip-card {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #page2 .flip-inner,
+  #page4 .flip-inner {
+    transform: none !important;
+  }
+
+  #page2 .flip-front,
+  #page4 .flip-front,
+  #page2 .flip-back,
+  #page4 .flip-back {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  #page2 .flip-back ul li,
+  #page4 .flip-back ul li {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  #page2 .flip-front img.card-img,
+  #page4 .flip-front img.card-img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  #page2 h2,
+  #page4 h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 15px;
+  }
+
+  #page2 .cards,
+  #page4 .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
