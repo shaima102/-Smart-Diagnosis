@@ -314,3 +314,46 @@ body {
   visibility: visible !important;
   background: none !important;
 }
+/* 📱 تحسين الرسبونسف للصفحة 2 و 4 لتكون مثل الآيباد */
+@media (max-width: 768px) {
+  #page2 .cards,
+  #page4 .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #page2 .flip-card,
+  #page4 .flip-card {
+    width: 45%;
+    height: 420px;
+  }
+
+  #page2 .flip-back,
+  #page4 .flip-back {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  #page2 .flip-front h3,
+  #page4 .flip-front h3 {
+    font-size: 1.1rem;
+  }
+
+  #page2 .flip-back ul li,
+  #page4 .flip-back ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* 📱 للجوالات الصغيرة جدًا */
+@media (max-width: 480px) {
+  #page2 .flip-card,
+  #page4 .flip-card {
+    width: 90%;
+    height: auto;
+  }
+}
+
