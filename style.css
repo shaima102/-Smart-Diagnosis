@@ -281,3 +281,43 @@ tr:hover td {
 #page4 h2 {
   color: #333333;
 }
+/* ✅ إصلاح وضوح النصوص في الصفحات الفاتحة */
+#page2 h2, 
+#page2 p, 
+#page2 li,
+#page4 h2, 
+#page4 p, 
+#page4 li {
+  color: #333 !important; /* يجعل النص داكن وواضح فوق الخلفية الفاتحة */
+}
+
+/* ✅ تحسين ظهور الأسهم */
+.arrow {
+  color: #007b83 !important;
+}
+
+/* ✅ تحسين التجاوب في الشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+  .flip-card {
+    width: 95%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  table {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  td, th {
+    padding: 10px;
+  }
+}
+
