@@ -155,51 +155,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* جدول صفحة 3 (زجاجي احترافي وشفاف) */
-#page3 {
-  background: url('/img/Solutions.jpg') no-repeat center center/cover;
-}
-
-#page3 table {
-  width: 85%;
-  border-collapse: collapse;
-  margin-top: 30px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  color: #fff;
-  font-size: 1.05rem;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-#page3 th {
- background-color: rgba(0, 0, 0, 0.15);
-  color: #fff;
-  padding: 14px;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-#page3 td {
-  padding: 14px;
- background: rgba(255, 255, 255, 0.1);
- border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  line-height: 1.8;
-}
-
-#page3 tr:hover td {
-  background: rgba(255, 255, 255, 0.25);
-  transition: 0.3s ease;
-}
-
-#page3 table td:first-child {
-  font-weight: 600;
-  color: #cdeeff;
-}
-
 /* ✅ شعار التشخيص الذكي */
 #page1 .logo {
   width: 600px;
@@ -212,6 +167,7 @@ body {
   image-rendering: auto;
 }
 
+/* حركة دخول الشعار */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
@@ -270,10 +226,60 @@ body {
 #page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
 #page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
 
+/* 🎨 صفحة 3 — تصميم زجاجي بنفس ألوان الصورة */
+#page3 {
+  background: url("./Solutions.jpg") no-repeat center center/cover;
+  color: #e7faff;
+}
+
+#page3 table {
+  width: 85%;
+  border-collapse: collapse;
+  margin-top: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  background: rgba(0, 90, 100, 0.35);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: #e7faff;
+  font-size: 1.05rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#page3 th {
+  background: rgba(0, 123, 131, 0.9);
+  color: #ffffff;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+#page3 td {
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 1.8;
+  color: #e7faff;
+}
+
+#page3 tr:hover td {
+  background: rgba(255, 255, 255, 0.15);
+  transition: 0.3s ease;
+}
+
+#page3 table td:first-child {
+  font-weight: 600;
+  color: #b8f6ff;
+}
+
 /* ============================= */
 /* 🔹 تحسين الرسبونسف للجوالات 🔹 */
 /* ============================= */
-
 @media (max-width: 768px) {
   .page {
     padding: 20px;
@@ -373,6 +379,3 @@ body {
   visibility: visible !important;
   background: none !important;
 }
-
-
-
