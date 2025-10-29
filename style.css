@@ -160,11 +160,7 @@ body {
   width: 600px;
   max-width: 90%;
   margin-bottom: 25px;
-  border-radius: 0;
-  box-shadow: none;
-  background: none;
   animation: fadeIn 1.5s ease-in-out;
-  image-rendering: auto;
 }
 
 @keyframes fadeIn {
@@ -223,45 +219,9 @@ body {
 #page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
 #page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
 
-/* 🎨 جدول صفحة 3 بتصميم شفاف احترافي */
-table {
-  border-collapse: collapse;
-  width: 85%;
-  margin-top: 40px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(6px);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-th, td {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 16px;
-  text-align: right;
-  vertical-align: top;
-}
-
-th {
-  background-color: rgba(0, 123, 131, 0.9);
-  color: white;
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-}
-
-td {
-  background-color: rgba(255, 255, 255, 0.6);
-  font-size: 1.05rem;
-  color: #ffffff;
-  line-height: 1.8;
-}
-
-tr:hover td {
-  background-color: rgba(255, 255, 255, 0.85);
-  transition: 0.3s ease;
-}
-
-/* جدول صفحة 3 (زجاجي احترافي وشفاف) */
+/* ===============================
+   🎨 صفحة 3 (زجاجية احترافية وشفافة)
+   =============================== */
 #page3 {
   background: url('Solutions.jpg') no-repeat center center/cover;
 }
@@ -325,21 +285,22 @@ tr:hover td {
     height: auto;
   }
 
-  table {
-    width: 100%;
+  /* 🔹 تعديل شكل الجدول للجوال */
+  #page3 table {
+    width: 95%;
     font-size: 0.9rem;
   }
 
-  th, td {
+  #page3 th, #page3 td {
     display: block;
     width: 100%;
     text-align: right;
     padding: 10px;
   }
 
-  tr {
+  #page3 tr {
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -353,4 +314,3 @@ tr:hover td {
   visibility: visible !important;
   background: none !important;
 }
-
