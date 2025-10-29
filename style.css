@@ -176,7 +176,7 @@ body {
 }
 
 #page3 th {
-  background: rgba(0, 123, 131, 0.85);
+ background-color: rgba(0, 0, 0, 0.15);
   color: #fff;
   padding: 14px;
   font-weight: 700;
@@ -373,5 +373,6 @@ body {
   visibility: visible !important;
   background: none !important;
 }
+
 
 
