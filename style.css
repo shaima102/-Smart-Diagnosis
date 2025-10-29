@@ -167,13 +167,11 @@ body {
   image-rendering: auto;
 }
 
-/* حركة دخول الشعار */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ✅ محاذاة وتوسيط اللوقو داخل الصفحة */
 #page1 {
   display: flex;
   flex-direction: column;
@@ -215,7 +213,6 @@ body {
   width: 90%;
 }
 
-/* 🎯 تغيير لون عناوين الصفحات 2 و 4 فقط */
 #page2 h2,
 #page4 h2 {
   color: #333333;
@@ -226,9 +223,45 @@ body {
 #page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
 #page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
 
-/* ===============================
-   🎨 صفحة 3 (زجاجية احترافية)
-   =============================== */
+/* 🎨 جدول صفحة 3 بتصميم شفاف احترافي */
+table {
+  border-collapse: collapse;
+  width: 85%;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  text-align: right;
+  vertical-align: top;
+}
+
+th {
+  background-color: rgba(0, 123, 131, 0.9);
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1.05rem;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+tr:hover td {
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: 0.3s ease;
+}
+
+/* جدول صفحة 3 (زجاجي احترافي وشفاف) */
 #page3 {
   background: url('/img/Solutions.jpg') no-repeat center center/cover;
 }
@@ -268,11 +301,6 @@ body {
   transition: 0.3s ease;
 }
 
-#page3 table td:first-child {
-  font-weight: 600;
-  color: #cdeeff;
-}
-
 /* 📱 استجابة للجوال */
 @media (max-width: 768px) {
   .page {
@@ -286,16 +314,6 @@ body {
     height: auto;
   }
 
-  .arrow {
-    font-size: 1.8rem;
-    bottom: 15px;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-  }
-
   .cards {
     flex-direction: column;
     align-items: center;
@@ -305,21 +323,6 @@ body {
   .flip-card {
     width: 90%;
     height: auto;
-  }
-
-  .flip-inner {
-    height: auto;
-  }
-
-  .flip-front, .flip-back {
-    height: auto;
-    padding: 15px;
-  }
-
-  .card-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
   }
 
   table {
@@ -334,23 +337,9 @@ body {
     padding: 10px;
   }
 
-  th {
-    background-color: #eee;
-    color: #333;
-    font-weight: bold;
-  }
-
   tr {
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  ul {
-    font-size: 0.9rem;
   }
 }
 
