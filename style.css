@@ -347,39 +347,48 @@ body {
   }
 }
 
-/* ✅ إصلاح اختفاء الكروت في الجوال */
+/* ✅ إصلاح نهائي لاختفاء الكروت في الجوال */
 @media (max-width: 768px) {
   #page2,
   #page4 {
     overflow: visible !important;
+    display: block !important;
   }
 
   #page2 .cards,
   #page4 .cards {
     display: flex !important;
-    flex-wrap: wrap !important;
+    flex-direction: column !important;
     justify-content: center !important;
-    align-items: flex-start !important;
-    gap: 18px !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
+    position: relative !important;
+    z-index: 5 !important;
   }
 
   #page2 .flip-card,
   #page4 .flip-card {
-    width: 45% !important;
-    height: 420px !important;
+    display: block !important;
+    width: 90% !important;
+    height: auto !important;
     margin: 10px auto !important;
-    display: flex !important;
     opacity: 1 !important;
     visibility: visible !important;
+    transform: none !important;
     perspective: none !important;
+    position: relative !important;
+    z-index: 6 !important;
   }
 
   #page2 .flip-inner,
   #page4 .flip-inner {
     transform: none !important;
+    position: relative !important;
   }
 
   #page2 .flip-front,
@@ -388,16 +397,20 @@ body {
   #page4 .flip-back {
     position: relative !important;
     backface-visibility: visible !important;
+    transform: none !important;
+    display: block !important;
   }
 
   #page2 .flip-front img.card-img,
   #page4 .flip-front img.card-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
     display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
   }
 }
+
+
 
 
 
