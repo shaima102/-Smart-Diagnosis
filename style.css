@@ -357,3 +357,17 @@ tr:hover td {
     font-size: 1.5rem;
   }
 }
+/* 🔧 إصلاح اختفاء الصور في الكروت */
+.flip-front img.card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
