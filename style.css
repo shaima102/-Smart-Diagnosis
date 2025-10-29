@@ -194,9 +194,9 @@ tr:hover td {
 }
 
 /* ألوان الخلفية لكل صفحة */
-#page1 { background: linear-gradient(135deg, #f0f4f7, #dbe9f1); }
+#page1 { background: url("https://raw.githubusercontent.com/shaima102/Smart-Diagnosis/main/tech-bg.jpg") no-repeat center center/cover; }
 #page2 { background: linear-gradient(135deg, #f5f7fa, #dbe6f6); }
-#page3 { background: url('Solutions.jpg') no-repeat center center/cover; }
+#page3 { background: url("https://raw.githubusercontent.com/shaima102/Smart-Diagnosis/main/Solutions.jpg") no-repeat center center/cover; }
 #page4 { background: linear-gradient(135deg, #f7f9fb, #e2e9f0); }
 
 /* تجاوب للشاشات الصغيرة */
@@ -216,57 +216,34 @@ tr:hover td {
   }
 }
 
-/* خلفية الصفحة الأولى */
+/* ✅ شعار التشخيص الذكي في الصفحة الأولى بدون ظل أو إطار */
+#page1 .logo {
+  width: 600px;
+  max-width: 90%;
+  margin-bottom: 25px;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  animation: fadeIn 1.5s ease-in-out;
+  image-rendering: auto;
+}
+
+/* حركة دخول الشعار */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ✅ محاذاة وتوسيط اللوقو داخل الصفحة */
 #page1 {
-  background: url("tech-bg.jpg") no-repeat center center/cover;
-}
-
-/* جدول صفحة 3 (زجاجي احترافي وشفاف) */
-#page3 {
-  background: url("Solutions.jpg") no-repeat center center/cover;
-}
-
-#page3 table {
-  width: 85%;
-  border-collapse: collapse;
-  margin-top: 30px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  color: #fff;
-  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  transition: all 0.3s ease;
 }
 
-#page3 th {
-  background: rgba(0, 123, 131, 0.85);
-  color: #fff;
-  padding: 14px;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-#page3 td {
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  line-height: 1.8;
-}
-
-#page3 tr:hover td {
-  background: rgba(255, 255, 255, 0.25);
-  transition: 0.3s ease;
-}
-
-#page3 table td:first-child {
-  font-weight: 600;
-  color: #cdeeff;
-}
-
-/* 🌟 تعديل صفحة 2 و 4 فقط - توسيط وتكبير النص داخل الكروت */
+/* 🌟 تعديل صفحة 2 و 4 فقط */
 #page2 .flip-back,
 #page4 .flip-back {
   display: flex;
@@ -302,36 +279,5 @@ tr:hover td {
 /* 🎯 تغيير لون عناوين الصفحات 2 و 4 فقط */
 #page2 h2,
 #page4 h2 {
-  color: #333333; /* رمادي غامق */
+  color: #333333;
 }
-
-/* ✅ شعار التشخيص الذكي في الصفحة الأولى بدون ظل أو إطار */
-#page1 .logo {
-  width: 600px;            /* تكبير الشعار */
-  max-width: 90%;          /* استجابة للشاشات الصغيرة */
-  margin-bottom: 25px;
-  border-radius: 0;        /* بدون حواف */
-  box-shadow: none;        /* بدون ظل */
-  background: none;        /* بدون خلفية */
-  animation: fadeIn 1.5s ease-in-out;
-  image-rendering: auto;   /* جودة الصورة عالية */
-}
-
-/* حركة دخول الشعار */
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-
-/* ✅ محاذاة وتوسيط اللوقو داخل الصفحة */
-#page1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-
-
