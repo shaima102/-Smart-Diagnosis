@@ -155,7 +155,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* 🎨 جدول صفحة 3 بتصميم شفاف احترافي */
+/* 🎨 جدول صفحة 3 (زجاجي احترافي) */
 table {
   border-collapse: collapse;
   width: 85%;
@@ -357,6 +357,7 @@ tr:hover td {
     font-size: 1.5rem;
   }
 }
+
 /* إصلاح ظهور الصورة في كرت مشكلة الإنترنت */
 #page4 .flip-front img.card-img {
   display: block;
@@ -368,5 +369,76 @@ tr:hover td {
   background: none !important;
 }
 
+/* ============================= */
+/* 🎨 صفحة 3 — تصميم زجاجي بنفس ألوان الصورة */
+/* ============================= */
 
+#page3 {
+  background: linear-gradient(135deg, #007b83, #00a8b5);
+  background-image: url("./Solutions.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
 
+#page3 h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#page3 table {
+  width: 85%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 1.05rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#page3 th {
+  background: rgba(0, 123, 131, 0.85);
+  color: #fff;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+#page3 td {
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  line-height: 1.8;
+  color: #eafcff;
+}
+
+#page3 tr:hover td {
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.3s ease;
+}
+
+#page3 table td:first-child {
+  font-weight: 600;
+  color: #cdeeff;
+}
+
+@media (max-width: 768px) {
+  #page3 table {
+    width: 95%;
+    font-size: 0.95rem;
+  }
+}
