@@ -157,7 +157,7 @@ body {
 
 /* ✅ شعار التشخيص الذكي */
 #page1 .logo {
-  width: 700px;
+  width: 600px;
   max-width: 90%;
   margin-bottom: 25px;
   border-radius: 0;
@@ -299,7 +299,7 @@ body {
   .cards {
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
 
   .flip-card {
@@ -313,54 +313,44 @@ body {
 
   .flip-front, .flip-back {
     height: auto;
-    padding: 18px;
+    padding: 15px;
   }
 
-  .flip-front img.card-img {
+  .card-img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
+    height: auto;
+    border-radius: 10px;
   }
 
-  .flip-front h3 {
-    font-size: 1.1rem;
-  }
-
-  .flip-back h3 {
-    font-size: 1.1rem;
-  }
-
-  .flip-back ul {
+  table {
+    width: 100%;
     font-size: 0.9rem;
   }
 
-  /* ✅ تصحيح عرض الكروت في الصفحتين 2 و 4 */
-  #page2 .flip-card, #page4 .flip-card {
-    width: 95%;
-    max-width: 360px;
-    height: auto;
-    perspective: none;
+  th, td {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
   }
 
-  #page2 .flip-inner, #page4 .flip-inner {
-    transform: none;
+  th {
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
   }
 
-  #page2 .flip-front, #page4 .flip-front,
-  #page2 .flip-back, #page4 .flip-back {
-    position: relative;
-    transform: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-radius: 16px;
-    background: #fff;
+  tr {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
   }
 
-  #page2 .flip-front h3, #page4 .flip-front h3 {
-    background: none;
-    color: #007b83;
-    font-size: 1.2rem;
-    padding-top: 10px;
+  h3 {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 0.9rem;
   }
 }
 
